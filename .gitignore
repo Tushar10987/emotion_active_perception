@@ -1,0 +1,16 @@
+# build artifacts
+build/
+install/
+log/
+*.pyc
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.DS_Store
+
+# datasets/artifacts (keep if desired)
+# ap_dataset/
+
+# venvs
+.venv/
+

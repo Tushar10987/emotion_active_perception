@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+from emotion_active_perception.nodes.emotion_controller_node import main
+
+if __name__ == "__main__":
+    main()
+

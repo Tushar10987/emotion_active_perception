@@ -1,0 +1,18 @@
+# Goal
+string request_id
+uint8 requested_mode   # 0=passive,1=active,2=forced
+float32 max_motion_m
+float32 max_pan_deg
+float32 timeout_s
+---
+# Result
+bool success
+string saved_frame_path
+float32 final_uncertainty
+float32 total_time_s
+---
+# Feedback
+float32 info_gain_estimate
+float32 current_uncertainty
+float32 step_count
+

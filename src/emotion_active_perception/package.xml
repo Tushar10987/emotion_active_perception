@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>emotion_active_perception</name>
+  <version>0.1.0</version>
+  <description>Emotion-Guided Active Perception extension for PIC4rl_gym. Python rclpy package with NBV action server and uncertainty-driven controller.</description>
+
+  <maintainer email="devnull@example.com">maintainer</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>builtin_interfaces</depend>
+  <depend>action_msgs</depend>
+  <depend>unique_identifier_msgs</depend>
+  <depend>vision_msgs</depend>
+
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>pytest</test_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+

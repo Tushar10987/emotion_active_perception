@@ -1,0 +1,33 @@
+compute:
+  device: auto  # cpu|cuda|auto
+  mixed_precision: true
+  batch_size: 1
+  max_vram_gb: 3.5
+
+model:
+  onnx_path: ""
+  trt_engine: ""
+  confidence_threshold: 0.25
+  iou_threshold: 0.45
+
+uncertainty:
+  method: mc_dropout  # mc_dropout|ensemble|stub
+  mc_samples: 10
+  dropout_p: 0.3
+
+emotion:
+  thresholds:
+    cautious: 0.5
+    exploratory: 0.2
+
+ap:
+  max_motion_m: 0.3
+  max_pan_deg: 15.0
+  timeout_s: 2.0
+
+topics:
+  camera_image: "/camera/image_raw"
+  emotion_state: "/emotion_state"
+  uncertainty_map: "/ap/uncertainty_map"
+  detections: "/ap/detections"
+
